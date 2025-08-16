@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth" data-theme="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Luis Nava – Desarrollador Web</title>
+    <meta name="description" content="Portafolio de desarrollador web: proyectos, habilidades y contacto." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container nav" id="siteNav">
+            <a href="#" class="logo" aria-label="Inicio">&lt;LuisNava /&gt;</a>
+            <div class="nav-right">
+                <button id="navToggle" class="btn ghost icon-btn nav-toggle" aria-label="Abrir menú"
+                    aria-expanded="false" aria-controls="primaryNav">☰</button>
+                <button id="themeToggle" class="btn ghost icon-btn" aria-label="Cambiar tema"
+                    title="Cambiar tema">🌙</button>
+                <nav id="primaryNav" class="links" aria-label="Principal">
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#sobre-mi">Sobre mí</a>
+                    <a href="#contacto">Contacto</a>
+                    <a id="downloadCV" class="btn" href="./CV.pdf" target="_blank" rel="noopener">Descargar CV</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero container" id="inicio">
+        <div>
+            <span class="pill">Disponible para prácticas / freelance</span>
+            <h1 class="title">Hola, soy <span style="color:var(--brand)">Luis</span> — Desarrollador Frontend</h1>
+            <p class="subtitle">Construyo interfaces limpias y accesibles con <strong>JavaScript</strong>,
+                <strong>React</strong> y <strong>Node.js</strong>. Me encanta aprender y compartir lo que voy creando.
+            </p>
+            <div class="hero-cta">
+                <a class="btn primary" href="#proyectos">Ver proyectos</a>
+                <a class="btn" href="#contacto">Contacto</a>
+                <a class="btn ghost" href="./public/CV_Luis_Gerardo_Nava_Arzate_Optimizado.pdf" target="_blank" rel="noopener">Descargar CV</a>
+            </div>
+            <p class="chip" style="margin-top:14px">📍 CDMX · Abierto a remoto · Español / Inglés</p>
+        </div>
+        <div>
+            <div class="card" style="aspect-ratio: 16 / 10; display:grid; place-items:center">
+                <div style="text-align:center; padding:24px">
+                    <div class="badge">Ahora mismo</div>
+                    <h3 style="margin:.4rem 0">Construyendo un ejercicio de lógica con JS</h3>
+                    <p class="subtitle">EJS · Node · PostgreSQL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" style="scroll-margin-top:80px">
+        <div class="container">
+            <div class="section-title">
+                <h2>Proyectos destacados</h2>
+                <div class="filters">
+                    <button class="btn ghost" data-filter="all">Todos</button>
+                    <button class="btn ghost" data-filter="Frontend">Frontend</button>
+                    <button class="btn ghost" data-filter="Full-stack">Full‑stack</button>
+                    <button class="btn ghost" data-filter="UI">UI</button>
+                </div>
+            </div>
+            <div class="grid projects" data-projects-grid></div>
+        </div>
+    </section>
+
+    <section id="habilidades" style="scroll-margin-top:80px">
+        <div class="container">
+            <div class="section-title">
+                <h2>Habilidades</h2>
+            </div>
+            <div class="skills">
+                <div class="skill"><strong>Frontend</strong><br><span class="subtitle">HTML, CSS, JS, React</span></div>
+                <div class="skill"><strong>Backend</strong><br><span class="subtitle">Node.js, Express</span></div>
+                <div class="skill"><strong>DB</strong><br><span class="subtitle">PostgreSQL, MySQL</span></div>
+                <div class="skill"><strong>Herramientas</strong><br><span class="subtitle">Git, GitHub, NPM</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi" style="scroll-margin-top:80px">
+        <div class="container about">
+            <div>
+                <div class="section-title">
+                    <h2>Sobre mí</h2>
+                </div>
+                <p>Soy estudiante de Ingeniería en Informática (graduación estimada agosto 2026). Disfruto crear
+                    interfaces claras y resolver problemas con código. Me adapto rápido y busco aprender constantemente.
+                </p>
+                <p>Actualmente, trabajando en una app para que estudiantes practiquen lógica de programación.</p>
+            </div>
+            <div>
+                <div class="card" style="padding:16px">
+                    <h3 style="margin-top:0">Logros/Certificaciones</h3>
+                    <ul>
+                        <li>Meta – Advanced React</li>
+                        <li>Meta - HTML and CSS in depth</li>
+                        <li>Platzi – API REST con JS, Frontend Developer, First Mobile, CSS Grid y Flexbox, NPM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" style="scroll-margin-top:80px">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contacto</h2>
+            </div>
+            <p class="subtitle">¿Tienes una oportunidad o quieres saludar? Escríbeme.</p>
+            <form class="grid" style="grid-template-columns:1fr 1fr">
+                <input aria-label="Nombre" placeholder="Nombre"
+                    style="padding:12px;border-radius:12px;border:1px solid color-mix(in oklab, var(--muted) 25%, transparent);background:var(--panel);color:var(--text)" />
+                <input aria-label="Email" type="email" placeholder="Email"
+                    style="padding:12px;border-radius:12px;border:1px solid color-mix(in oklab, var(--muted) 25%, transparent);background:var(--panel);color:var(--text)" />
+                <textarea aria-label="Mensaje" placeholder="Mensaje" rows="5"
+                    style="grid-column:1/-1;padding:12px;border-radius:12px;border:1px solid color-mix(in oklab, var(--muted) 25%, transparent);background:var(--panel);color:var(--text)"></textarea>
+                <button class="btn primary" type="button">Enviar</button>
+            </form>
+            <p class="subtitle" style="margin-top:12px">O encuéntrame en
+                <a href="https://github.com/luisito343">GitHub</a> ·
+                <a href="http://linkedin.com/in/lnava70">LinkedIn</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">© <span id="year"></span> Tu Nombre. Hecho con ❤️ y café.</div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/render.js"></script>
+</body>
+
+</html>

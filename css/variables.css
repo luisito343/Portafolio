@@ -1,0 +1,23 @@
+:root {
+    --bg: #0b0e14;
+    --panel: #121826;
+    --card: #0f1424;
+    --muted: #9aa4b2;
+    --text: #e5e7eb;
+    --brand: #7c3aed;
+    --accent: #22d3ee;
+    --ring: rgba(124, 58, 237, .35);
+    --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+}
+
+[data-theme="light"] {
+    --bg: #f8fafc;
+    --panel: #ffffff;
+    --card: #ffffff;
+    --muted: #64748b;
+    --text: #0f172a;
+    --brand: #6d28d9;
+    --accent: #0891b2;
+    --ring: rgba(99, 102, 241, .3);
+    --shadow: 0 10px 30px rgba(2, 6, 23, .08)
+}

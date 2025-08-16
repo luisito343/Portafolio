@@ -1,0 +1,47 @@
+[
+    {
+        "id": "logic-app",
+        "title": "App de Práctica de Lógica",
+        "description": "Quizzes y ejercicios interactivos para reforzar fundamentos de programación.",
+        "stack": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Node.js"
+        ],
+        "type": "Full-stack",
+        "image": "/assets/img/logic-app.jpg",
+        "demo": "https://tudominio/demo-logic",
+        "code": "https://github.com/tuusuario/logic-app"
+    },
+    {
+        "id": "sales-crud",
+        "title": "Gestión de Ventas",
+        "description": "CRUD de productos con imagen, mayoreo/menudeo y reportes básicos.",
+        "stack": [
+            "Node.js",
+            "Express",
+            "PostgreSQL",
+            "EJS"
+        ],
+        "type": "Full-stack",
+        "image": "/assets/img/sales.jpg",
+        "demo": "#",
+        "code": "#"
+    },
+    {
+        "id": "van-life",
+        "title": "Demo Frontend: Catálogo de Vans en React",
+        "description": "SPA de práctica que simula un sitio de renta de vans. Desarrollada en frontend con React/JS y consumo de datos en Firebase (BaaS).",
+        "stack": [
+            "React",
+            "FiseBase",
+            "HTML",
+            "CSS"
+        ],
+        "type": "Frontend",
+        "image": "/assets/img/sales.jpg",
+        "demo": "#",
+        "code": "#"
+    }
+]
