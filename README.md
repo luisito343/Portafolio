@@ -5,7 +5,7 @@ Aquí encontrarás una muestra de mis proyectos, habilidades y un poco sobre mí
 
 ## 🌐 Demo
 [👉 Ver portafolio en línea](#)  
-*(Agrega aquí el link de GitHub Pages / Netlify / Vercel cuando lo tengas publicado)*
+*(Se publicara pronto)*
 
 ---
 
