@@ -44,6 +44,5 @@ Aquí encontrarás una muestra de mis proyectos, habilidades y un poco sobre mí
 
 - **Frontend:** HTML5, CSS3, JavaScript
 - **Estilos:** Variables CSS, responsive design
-- **Herramientas:** Git, GitHub Pages (o Netlify/Vercel para el deploy)
 
 ---
