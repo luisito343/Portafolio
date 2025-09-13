@@ -256,6 +256,44 @@ footer {
     border-top: 1px solid color-mix(in oklab, var(--muted) 20%, transparent)
 }
 
+.scroll-top-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid color-mix(in oklab, var(--muted) 30%, transparent);
+    background: linear-gradient(180deg, color-mix(in oklab, var(--panel) 85%, transparent), color-mix(in oklab, var(--card) 90%, transparent));
+    color: var(--brand);
+    box-shadow: var(--shadow);
+    transition: transform .1s, box-shadow .1s, background .2s;
+    font-size: 1.3rem;
+    text-decoration: none;
+    position: relative;
+    left: 70%;
+    bottom: 100px;
+}
+
+.scroll-top-btn:hover {
+    background: linear-gradient(90deg, var(--brand), var(--accent));
+    color: #fff;
+    transform: translateY(-2px) scale(1.07);
+    box-shadow: 0 4px 16px 0 color-mix(in oklab, var(--brand) 20%, transparent);
+}
+
+/* Responsive: centrar flecha abajo en móviles */
+@media (max-width: 600px) {
+    footer .container {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .scroll-top-btn {
+        margin-left: 0;
+    }
+}
+
 /* Responsive */
 @media (max-width: 900px) {
 

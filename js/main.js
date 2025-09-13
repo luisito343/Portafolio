@@ -63,3 +63,45 @@ document.addEventListener('click', (e) => {
     const type = btn.getAttribute('data-filter')
     window.renderProjects({ type })
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.querySelector('section#contacto form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            // Limpia los campos del formulario
+            contactForm.reset();
+
+            // Si ya existe el mensaje, no lo agrega de nuevo
+            if (!document.getElementById('contact-success')) {
+                const msg = document.createElement('div');
+                msg.id = 'contact-success';
+                msg.textContent = '¡Gracias por contactarme!';
+                msg.style.cssText = `
+                    margin-top:18px;
+                    background: color-mix(in oklab, var(--panel) 80%, transparent);
+                    color: var(--brand);
+                    border-radius: 12px;
+                    padding: 14px 18px;
+                    font-weight: 500;
+                    text-align: center;
+                    border: 1px solid color-mix(in oklab, var(--brand) 30%, transparent);
+                    box-shadow: var(--shadow);
+                `;
+                contactForm.parentNode.insertBefore(msg, contactForm.nextSibling);
+
+                setTimeout(() => {
+                    msg.remove();
+                }, 4000);
+            }
+        });
+
+        // Permitir también con el botón type="button"
+        const sendBtn = contactForm.querySelector('button[type="button"]');
+        if (sendBtn) {
+            sendBtn.addEventListener('click', function (e) {
+                contactForm.dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
+            });
+        }
+    }
+});
